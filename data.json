@@ -1,0 +1,69 @@
+{
+    "students": {
+        "S111": {
+            "name": "ALPEREN",
+            "email": "alperen@csss",
+            "courses": [
+                "C222"
+            ]
+        },
+        "S112": {
+            "name": "JERISH",
+            "email": "jerish@csss",
+            "courses": [
+                "C112"
+            ]
+        },
+        "SSS": {
+            "name": "SSS",
+            "email": "SSS",
+            "courses": [
+                "C223"
+            ]
+        }
+    },
+    "teachers": {
+        "T100": {
+            "name": "Mewoy",
+            "email": "mewoy@gmail.com",
+            "courses": []
+        },
+        "T101": {
+            "name": "jhon",
+            "email": "jhon@uni.com",
+            "courses": [
+                "C223"
+            ]
+        },
+        "T111": {
+            "name": "PROF. MANI",
+            "email": "mani",
+            "courses": []
+        },
+        "T113": {
+            "name": "PROF. OUMAIMA",
+            "email": "oumaima@csss",
+            "courses": [
+                "C222"
+            ]
+        }
+    },
+    "courses": {
+        "C222": {
+            "name": "Advanced Programming",
+            "credits": 20
+        },
+        "C223": {
+            "name": "Cyber Security",
+            "credits": 25
+        },
+        "C111": {
+            "name": "ADVANCED PROGRAMMING",
+            "credits": 20
+        },
+        "C112": {
+            "name": "WEB AND MOBILE APPLICATIONS",
+            "credits": 20
+        }
+    }
+}
