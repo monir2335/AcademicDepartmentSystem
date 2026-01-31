@@ -15,7 +15,10 @@ class Menu:
     def start(self):
         while True:
             self.clear_screen()
-            print("| ============ USER AUTHENTICATION ============ |")
+            print("\n| ============================================== |")
+            print("| ========= ACADEMIC DEPARTMENT SYSTEM ========= |")
+            print("| ============================================== |")
+            print("\n\n| ============ USER AUTHENTICATION ============ |")
             print("| 1.) LOG-IN                                    |")
             print("| 2.) SIGN-UP                                   |")
             print("| 0.) EXIT                                      |")
