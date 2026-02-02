@@ -10,11 +10,10 @@ class AuthenticationController:
     def _load_admin_credentials(self):
         if os.path.exists(self.filename):  # checking if the file exists
             with open(self.filename, "r") as f:
-                self.admin_credentials = json.load(
-                    f
-                )  # loading the credential from json file
+                self.admin_credentials = json.load(f)  # loading the credential from json file
         else:
             self.admin_credentials = {}  # if file does not exist, create an empty dictionary
+            
             self._save_admin_credentials()  # if file does not exist create a new one
 
     def _save_admin_credentials(self):  # saving admin data into json file

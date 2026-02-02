@@ -4,22 +4,18 @@ from Menu import Menu
 from Auth import AuthenticationController
 
 def main():
-    
-    #creating the controller for starting the menus
-    register = Register()
-    auth = AuthenticationController()
 
-    # creating the database i.e. JSON file persistance
-    database = DataController("data.json")
-    # to load saved data
-    database.load_data(register)
+    register = Register()                 # creating instances of Register class to manage students, teachers, courses
+    auth = AuthenticationController()     # creating instance of AuthenticationController for login/signup
+
+    database = DataController("data.json")   # creating thr database controller instance
+    database.load_data(register)             # to load saved data from json.
 
     # starting the menu 
-    menu = Menu(register, database, auth)
-    menu.start()
+    menu = Menu(register, database, auth)    # creating instance of Menu class and calls Menu.
+    menu.start()                             # starting menu
 
-    # to save data before exiting program
-    database.save_data(register)
+    database.save_data(register)             # to save data before exiting program
 
     print("Data has been saved, Program Closing...")
 

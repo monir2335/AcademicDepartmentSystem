@@ -5,14 +5,12 @@ from Course import Course
 
 class DataController:
     def __init__(self, filename = "data.json"):
-        # Abstraction: DataController encapsulates persistence (JSON storage) behind a simple API.
-        # Other parts of the app call `load_data`/`save_data` without needing to know file details.
         self._filename = filename 
 
 
     # ---------- SAVING DATA INTO JSON ----------------#
     # to save the data into json file
-    def save_data(self, register):
+    def save_data(self, register): # ABSTRACTION, only shows the save data without exposing file handling details
         data = {
             "students" : {},
             "teachers" : {},
@@ -23,7 +21,7 @@ class DataController:
         for studentid, student in register.get_students().items():
             data["students"][studentid] = {
                 "name" : student.get_name(),
-                "email" : getattr(student, "_email",""),
+                "email" : getattr(student, "_email",""),    # gets email attribute from student object
                 "courses" : student.get_courses()
             }
 
@@ -31,15 +29,15 @@ class DataController:
         for teacherid, teacher in register.get_teachers().items():
             data["teachers"][teacherid] = {
                 "name" : teacher.get_name(),
-                "email" : getattr(teacher, "_email",""),
+                "email" : getattr(teacher, "_email",""),    # gets email attribute from teacher object
                 "courses" : teacher.get_courses()
             }
 
         # to save courses data
         for courseid, course in register.get_courses().items():
             data["courses"][courseid] = {
-                "name" : course.get_name(),
-                "credits" : getattr(course, "_credits","")
+                "name" : course.get_name(),                 
+                "credits" : getattr(course, "_credits","")   # gets credits attribute from course object
             }
 
         # to open the json file
@@ -47,9 +45,10 @@ class DataController:
             json.dump(data, f, indent=4)
         print("Data saved successfully.")
 
+
     # ---------- LOADING DATA FROM JSON ----------------#
     # to load the data which is saved in json file
-    def load_data(self, register):
+    def load_data(self, register):  # ABSTRACTION, only shows the load data without exposing file handling details
         try:
             with open(self._filename, "r") as f:
                 data = json.load(f)

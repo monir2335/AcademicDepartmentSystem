@@ -1,7 +1,9 @@
 from abc import ABC, abstractmethod
 
 class Person(ABC):
-    "Abstract Parent Class, and Is a parent class"
+
+    # parent class for student and teacher class. It is an abstract class.
+
     def __init__(self, name, person_id):
         self._name = name               #encapsulated value
         self._person_id = person_id     #encapsulated value
@@ -15,9 +17,9 @@ class Person(ABC):
 
     # this is an abstract method, that will be implemented by its child classes
     @abstractmethod
-    def display_info(self):            #polymorphism for student and teacher classes.
+    def display_info(self):            # POLYMORPHISM for student and teacher classes.
         pass
 
     @abstractmethod
-    def get_courses(self):
+    def get_courses(self):             # POLYMORPHISM for student and teacher classes.
         pass

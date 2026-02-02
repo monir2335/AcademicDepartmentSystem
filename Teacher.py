@@ -5,10 +5,12 @@ from Person import Person
 # Polymorphism: overrides display_info() from Person
 
 class Teacher(Person):
+
     # teacher class inherits attributes from Person (parent) class
+
     def __init__(self, name, person_id, email):
         super().__init__(name, person_id)  # initialize parent class attributes and merging with teacher class.
-        self._teaching_courses = []
+        self._teaching_courses = []        # creating insance variable to store teaching course.
         self._email = email         
 
     # method to assign a course to a teacher if not assigned

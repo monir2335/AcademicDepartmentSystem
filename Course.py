@@ -1,18 +1,19 @@
 class Course:
+    
     # Encapsulation: course details are private
-    # Abstraction: provides simple getters (get_id, get_name) so other code need not access internals
-    # This represent a course class
+    # Abstraction: provides easy way to get (get_id, get_name) hiding internal process
+
     def __init__(self, course_id, course_name, credits):
         self._course_id = course_id        # encapsulated value
         self._course_name = course_name    # encapsulated value
         self._credits = credits            # encapsulated value
 
     # to return the Course ID
-    def get_id(self):
+    def get_id(self):                      # ABSTRCTION for getting course id
         return self._course_id
 
     # to return the course name
-    def get_name(self):
+    def get_name(self):                    # ABSTRACTION for getting course name 
         return self._course_name
     
     # to display all course information

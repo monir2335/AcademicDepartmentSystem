@@ -2,13 +2,13 @@ from Student import Student
 from Teacher import Teacher 
 from Course import Course
 
-# creating the Menu for User Interface
+# creating the Menu for User Interaction
 
 class Menu:
     def __init__(self, register, database, auth):
-        self._register = register
-        self._database = database
-        self._auth = auth
+        self._register = register      # instances attributes, stores register object i.e. students, teachers, courses, enrollments
+        self._database = database      # stores database object i.e. for JSON file
+        self._auth = auth              # stores authentication controller object i.e. for admin login/signup
 
     # starting the program, shows the admin login menu.
     # after successful login, comes the main menu 
@@ -174,7 +174,7 @@ class Menu:
 
             elif ch == "2":
                 for cour in self._register.get_courses().values():
-                    cour.display_course()
+                    cour.display_course()    # ABSTRACTION
                 input("\nPress Enter to continue...")
             
             elif ch == "3":
@@ -239,15 +239,15 @@ class Menu:
 
 
         print("\n Students : ")
-        for stu in self._register.get_students().values():
+        for stu in self._register.get_students().values():   # loop through all students
             stu.display_info()
 
         print("\n\n Teachers : ")
-        for teach in self._register.get_teachers().values():
+        for teach in self._register.get_teachers().values(): # loop through all teachers
             teach.display_info()
 
         print("\n\n Courses : ")
-        for cour in self._register.get_courses().values():
+        for cour in self._register.get_courses().values():   # loop through all courses
             cour.display_course()
         input("\nPress Enter to continue...")
         

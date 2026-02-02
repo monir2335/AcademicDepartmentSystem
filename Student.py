@@ -1,14 +1,16 @@
 from Person import Person
 
 # Inheritance: Student inherits from Person 
-# Encapsulation: uses internal attributes _enrolled_courses and _email to hide them
+# Encapsulation: _enrolled_courses and _email is hidden
 # Polymorphism: overrides display_info() defined as abstract in Person
 
 class Student(Person):
+
     # student class is inheriting attributes from parent (Person) class.
+
     def __init__(self, name, person_id, email):
         super().__init__(name, person_id)  #initialize parent class attributes and merging with child class
-        self._enrolled_courses = []   
+        self._enrolled_courses = []        # creating instance variable to store enrolled course ID.
         self._email = email      
     
     # method to enroll a course
