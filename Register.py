@@ -31,7 +31,7 @@ class Register:
             enrollment.enroll()
             self._enrollments.append(enrollment)
         else:
-            print("Invalid Credentials,\n Either Student ID or Course ID is invalid.")
+            print("Invalid Credentials,\nEither Student ID or Course ID is invalid.")
 
     # method to drop a student from a course
     def drop_student_from_course(self, student_id, course_id):
@@ -42,7 +42,7 @@ class Register:
                     enrollment.drop()
                     break
         else:
-            print("Invalid Credentials,\n Either Student ID or Course ID is invalid.")
+            print("Invalid Credentials,\nEither Student ID or Course ID is invalid.")
 
     
     # assigning a course to a teacher
@@ -57,7 +57,7 @@ class Register:
             else:
                 print(f'Teacher "{teacher.get_name()}" is already assigned Course "{course.get_name()}"')
         else:
-            print("Invalid Credentials,\n Either Teacher ID or Course ID is invalid.")
+            print("Invalid Credentials,\nEither Teacher ID or Course ID is invalid.")
 
     # removing a course from a teacher
     def remove_teacher_from_course(self, teacher_id, course_id):
@@ -72,7 +72,7 @@ class Register:
                 print(f'Course "{course.get_name()}" is not assigned to Teacher "{teacher.get_name()}"')
 
         else:
-            print("Invalid Credentials,\n Either Teacher ID or Course ID is invalid.")
+            print("Invalid Credentials,\nEither Teacher ID or Course ID is invalid.")
 
     
     # method to create getter for students, teachers, courses

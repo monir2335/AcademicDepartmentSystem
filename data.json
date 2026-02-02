@@ -1,68 +1,68 @@
 {
     "students": {
-        "S111": {
-            "name": "ALPEREN",
-            "email": "alperen@csss",
+        "S1001": {
+            "name": "John",
+            "email": "john@gmail.como",
             "courses": [
-                "C222"
+                "C9991",
+                "C9992"
             ]
         },
-        "S112": {
-            "name": "JERISH",
-            "email": "jerish@csss",
+        "S1002": {
+            "name": "Alice",
+            "email": "alice1002@gmail.com",
             "courses": [
-                "C112"
+                "C9993",
+                "C9992"
             ]
         },
-        "SSS": {
-            "name": "SSS",
-            "email": "SSS",
+        "S1003": {
+            "name": "Tony",
+            "email": "tony1003@gmail.com",
             "courses": [
-                "C223"
+                "C9991"
             ]
+        },
+        "S1004": {
+            "name": "Omar",
+            "email": "omar1004@gmail.com",
+            "courses": []
         }
     },
     "teachers": {
-        "T100": {
-            "name": "Mewoy",
-            "email": "mewoy@gmail.com",
-            "courses": []
-        },
-        "T101": {
-            "name": "jhon",
-            "email": "jhon@uni.com",
+        "T1111": {
+            "name": "Prof. Bilal",
+            "email": "bilal@gmail.com",
             "courses": [
-                "C223"
+                "C9991"
             ]
         },
-        "T111": {
-            "name": "PROF. MANI",
-            "email": "mani",
-            "courses": []
-        },
-        "T113": {
-            "name": "PROF. OUMAIMA",
-            "email": "oumaima@csss",
+        "T1112": {
+            "name": "Prof. Mani",
+            "email": "mani1112@gmail.com",
             "courses": [
-                "C222"
+                "C9992"
+            ]
+        },
+        "T1113": {
+            "name": "Prof. Oumaima",
+            "email": "oumaima1113@gmail.com",
+            "courses": [
+                "C9993"
             ]
         }
     },
     "courses": {
-        "C222": {
-            "name": "Advanced Programming",
+        "C9991": {
+            "name": "CYBER SECURITY",
             "credits": 20
         },
-        "C223": {
-            "name": "Cyber Security",
-            "credits": 25
-        },
-        "C111": {
+        "C9992": {
             "name": "ADVANCED PROGRAMMING",
             "credits": 20
         },
-        "C112": {
-            "name": "WEB AND MOBILE APPLICATIONS",
+        "C9993": {
+            "name": "WEB APPLICATIONS",
             "credits": 20
         }
     }

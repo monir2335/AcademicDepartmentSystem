@@ -42,7 +42,7 @@ class Student(Person):
         print("| ========= STUDENT INFORMATION ========= |")
         print("| ======================================= |")
         print("| Student Name : ", self.get_name())
-        print("|  ID : ", self.get_id())
+        print("| Student ID : ", self.get_id())
         print("| Student Email : ", self._email)
         print("| Enrolled Course : ", self._enrolled_courses if self._enrolled_courses else "None")
         print("| ======================================= |")
