@@ -8,7 +8,7 @@ def main():
     register = Register()                 # creating instances of Register class to manage students, teachers, courses
     auth = AuthenticationController()     # creating instance of AuthenticationController for login/signup
 
-    database = DataController("data.json")   # creating thr database controller instance
+    database = DataController("data.json")   # creating the database controller instance
     database.load_data(register)             # to load saved data from json.
 
     # starting the menu 
