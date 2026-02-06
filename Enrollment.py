@@ -9,7 +9,7 @@ class Enrollment:
         self._course = course     #encapsulated value
 
     # method to enroll a student in a course
-    def enroll(self, student=None, course=None, prevent_print=False):     # ABSTRACTION
+    def enroll(self, student=None, course=None, prevent_print=False):     
         # uses given value or else the stored ones
         s = student if student is not None else self._student
         c = course if course is not None else self._course
@@ -20,7 +20,7 @@ class Enrollment:
                 print("Cannot enroll: this Enrollment manages course", self._course.get_id())
             return
 
-        if c.get_id() not in s.get_courses():                           # ABSTRACTION
+        if c.get_id() not in s.get_courses():                       
                 s.enroll_courses(c.get_id(), prevent_print=True)
                 if not prevent_print:
                     print("Student", s.get_name(), "has been enrolled in the course", c.get_name())
@@ -29,7 +29,7 @@ class Enrollment:
                 print("Student", s.get_name(), "is already enrolled in the course", c.get_name())
 
     # method to remove a student from a course
-    def drop(self, student=None, course=None, prevent_print=False):       # ABSTRACTION
+    def drop(self, student=None, course=None, prevent_print=False):   
         # uses given value or else the stored ones
         s = student if student is not None else self._student
         c = course if course is not None else self._course

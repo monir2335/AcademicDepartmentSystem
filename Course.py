@@ -9,11 +9,11 @@ class Course:
         self._credits = credits            # encapsulated value
 
     # to return the Course ID
-    def get_id(self):                      # ABSTRCTION for getting course id
+    def get_id(self):                      
         return self._course_id
 
     # to return the course name
-    def get_name(self):                    # ABSTRACTION for getting course name 
+    def get_name(self):                  
         return self._course_name
     
     # to display all course information

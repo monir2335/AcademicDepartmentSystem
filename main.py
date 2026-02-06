@@ -11,7 +11,6 @@ def main():
     database = DataController("data.json")   # creating the database controller instance
     database.load_data(register)             # to load saved data from json.
 
-    # starting the menu 
     menu = Menu(register, database, auth)    # creating instance of Menu class and calls Menu.
     menu.start()                             # starting menu
 

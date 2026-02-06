@@ -11,14 +11,14 @@ class Register:
         self._enrollments = []  # list to store enrollment objects
 
     # method to add a student, teacher, and a course
-    def add_student(self, student):                # creating abstraction 
-        self._students[student.get_id()] = student # adding student object to the dictionary with student_id as key
+    def add_student(self, student):                 
+        self._students[student.get_id()] = student 
     
-    def add_teacher(self, teacher):                # creating abstraction
-        self._teachers[teacher.get_id()] = teacher # adding teacher object to the dictionary with teacher_id as key
+    def add_teacher(self, teacher):                
+        self._teachers[teacher.get_id()] = teacher 
 
-    def add_course(self, course):                  # creating abstraction
-        self._courses[course.get_id()] = course    # adding course object to the dictionary with course_id as key
+    def add_course(self, course):                  
+        self._courses[course.get_id()] = course   
 
 
     # method to enroll a student to a course

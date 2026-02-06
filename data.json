@@ -1,5 +1,26 @@
 {
-    "students": {},
-    "teachers": {},
-    "courses": {}
+    "students": {
+        "S111": {
+            "name": "Monirul",
+            "email": "monir@gmail.com",
+            "courses": [
+                "C333"
+            ]
+        }
+    },
+    "teachers": {
+        "T222": {
+            "name": "Prof. Mani",
+            "email": "mani@gmail.com",
+            "courses": [
+                "C333"
+            ]
+        }
+    },
+    "courses": {
+        "C333": {
+            "name": "Advanced Programming",
+            "credits": 20
+        }
+    }
 }

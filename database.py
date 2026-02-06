@@ -10,7 +10,7 @@ class DataController:
 
     # ---------- SAVING DATA INTO JSON ----------------#
     # to save the data into json file
-    def save_data(self, register): # ABSTRACTION, only shows the save data without exposing file handling details
+    def save_data(self, register): 
         data = {
             "students" : {},
             "teachers" : {},
@@ -48,7 +48,7 @@ class DataController:
 
     # ---------- LOADING DATA FROM JSON ----------------#
     # to load the data which is saved in json file
-    def load_data(self, register):  # ABSTRACTION, only shows the load data without exposing file handling details
+    def load_data(self, register):  
         try:
             with open(self._filename, "r") as f:
                 data = json.load(f)
